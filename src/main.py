@@ -1,11 +1,11 @@
-from algorithms.aco import AntColony
-from algorithms.ga import GeneticAlgorithm
+from algorthims.aco import AntColony 
+from algorthims.ga import GeneticAlgorithm 
 from utils.tsp_utils import load_distance_matrix
 from utils.tsp_utils import compute_tour_length
 from utils.visualization import visualize_solution
 
 # Load distance matrix
-distances = load_distance_matrix("data/city_distances.csv")
+distances = load_distance_matrix("../data/city_distances.csv")
 
 # Run ACO
 aco = AntColony(distances)
@@ -20,4 +20,4 @@ best_ga_tour_length = compute_tour_length(best_ga_path, distances)
 print(f"GA Best Path: {best_ga_path}, Distance: {best_ga_tour_length}")
 
 # Visualize the solutions
-visualize_solution(best_aco_path, best_ga_path, distances)
+visualize_solution(best_aco_path, best_ga_path)
