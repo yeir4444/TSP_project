@@ -20,6 +20,7 @@ TSP_Project/
 │   │   ├── ga.py  # Genetic Algorithm
 │   ├── utils/
 │   │   ├── visualization.py  # Visualization functions
+│   │   ├── tsp_utils.py  # TSP functions
 │   ├── main.py  # Entry point for running the TSP solver
 │── results/
 │   ├── figures/  # Saved TSP solution plots
